@@ -83,4 +83,56 @@ A function returns another function but they still maintain the lexical scope.
   7
 </pre>
 
+### Example 3:
 
+<pre>
+  function x(){
+    //lexical scope of y()
+    var a = 7; 
+    function y(){
+      console.log(a);
+    }
+    a = 100; //reassigned 'a' variable
+    return y;
+  }//x
+
+  var z = x();
+  console.log(z);
+  z();
+</pre>
+
+### Output 3:
+<pre>
+  ƒ y(){
+      console.log(a);
+    }
+  
+  100
+</pre>
+
+Because of the closure, 'z' is referring to 'a' memory which is reassigned with 100 before returning the y().
+
+### Example 4:
+
+<pre>
+  function z(){
+    var b = 900;
+    function x(){
+      var a = 7;
+      function y()
+      {
+        console.log(a,b); //'a' is a lexical scope of y() and 'b' is a lexical scope of x()
+      }//y
+      y();
+    }//x
+    x();
+  }//z
+
+  z();
+</pre>
+
+- y() forms a closure along with the 'a' variable which is its parent's lexical environment and with the variable 'b' which is its parent's parent lexical scope.
+- 'a' and 'b' variables are retained though they are removed from the call stack.
+
+## Conclusion
+Closure is a powerful concept because this remembers values even when they aren't in the call stack. This makes JavaScript very powerful.
