@@ -1,4 +1,4 @@
-var twoSum = function(nums, target) {
+var twoSum = function(nums, target){
     /*
     i-0 - 1st iteration
     i-1 - 2nd iteration
