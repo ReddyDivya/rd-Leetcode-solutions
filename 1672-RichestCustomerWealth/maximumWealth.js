@@ -8,7 +8,7 @@ var maximumWealth = function(accounts) {
         //case 3 >> i = 2, currWealth = 0;
         let currWealth = 0;
 
-        for(let j=0; j < accounts.length; j++)
+        for(let j=0; j < accounts[i].length; j++)
         {
             /*
             case 1 >> i = 0, currWealth = 0;
@@ -24,7 +24,7 @@ var maximumWealth = function(accounts) {
             [2, 1] >> 3+5 = 8
             */
             currWealth += accounts[i][j];
-            console.log('currWealth >> ', currWealth);
+            
         }
 
         /*
@@ -33,13 +33,12 @@ var maximumWealth = function(accounts) {
             case 2 >> i = 1, currWealth = 10, maxWealth = 10
             case 3 >> i = 2, currWealth = 8, maxWealth = 10
         */
-        console.log('max >> ', maxWealth);
-        
         maxWealth = Math.max(maxWealth, currWealth);//6, 10, 10
-        
     }
 
     return maxWealth;
 };
 
 maximumWealth([[1,5],[7,3],[3,5]])
+maximumWealth([[1,2,3],[3,2,1]])
+maximumWealth([[2,8,7],[7,1,3],[1,9,5]])
