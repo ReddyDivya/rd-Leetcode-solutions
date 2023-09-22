@@ -5,11 +5,11 @@ var reverse = function(x) {
 
     if(x < 0)
     {
-        console.log('negative');
         isNegNum = true;
+        x = Math.abs(x);//Math.abs - to remove negative sign
     }
 
-    while(x !== 0)
+    while(x > 0)
     {
         lastDigit = x % 10;//3, 2, 1
 
