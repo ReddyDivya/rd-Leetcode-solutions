@@ -1,3 +1,7 @@
+/**
+ * @param {number} x
+ * @return {number}
+ */
 var reverse = function(x) {
     let lastDigit = 0;
     let reverse = 0;
@@ -6,8 +10,9 @@ var reverse = function(x) {
     if(x < 0)
     {
         isNegNum = true;
-        x = Math.abs(x);//Math.abs - to remove negative sign
     }
+
+    x = Math.abs(x);//Math.abs - to remove negative sign
 
     while(x > 0)
     {
@@ -27,3 +32,4 @@ var reverse = function(x) {
 
 console.log(reverse(123));//321
 console.log(reverse(-123));//-321
+console.log(reverse(1534236469));//9646324351
