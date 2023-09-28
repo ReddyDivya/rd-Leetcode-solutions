@@ -1,3 +1,7 @@
+/**
+ * @param {number[]} nums
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
 var duplicateZeros = function(nums) {
     //[1,0,2,3,0,4,5,0]
     
