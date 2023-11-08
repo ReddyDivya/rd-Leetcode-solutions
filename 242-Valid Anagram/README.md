@@ -14,3 +14,5 @@ Output: true
 Input: s = "rat", t = "car"
 Output: false
 ```
+
+![image](https://github.com/ReddyDivya/rd-Leetcode-solutions/assets/34181144/78431eeb-0fc6-4b96-9f4a-f2f0b58dc2c8)
