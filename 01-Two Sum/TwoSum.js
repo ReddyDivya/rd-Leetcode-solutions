@@ -30,6 +30,29 @@ var twoSum = function(nums, target){
     }
 };
 
+/**
+Method 2: HashMap
+ */
+var twoSum = function(nums, target) {
+    //Method: HashMap
+
+    let indicesMap = {};//hashmap{value: index}
+
+    for(let i=0; i<nums.length; i++)
+    {
+        const difference = target - nums[i];//finding difference
+
+        //if difference exists in the hashmap, then return indices
+        if(difference in indicesMap){
+            return [indicesMap[difference], i];
+        }
+
+        //inserting value and index into hashmap
+        indicesMap[nums[i]] = i;
+    }
+};
+
+
 //Output
 twoSum([3,2,4], 6); //[1, 2]
 twoSum([2,7,11,15], 9); //[0, 1]
