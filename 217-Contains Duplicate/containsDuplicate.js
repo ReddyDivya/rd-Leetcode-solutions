@@ -2,17 +2,30 @@
  * @param {number[]} nums
  * @return {boolean}
  */
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */
 var containsDuplicate = function(arr) {
-    let value = false;
-    let nums = arr.sort(); //1. sorting array
+    /*
+    Approach - Set
+    Time Complexity - O(n)
+    Space Complexity - O(n)
+    */
+    const hashset = new Set();//Create an empty Set
 
-    //2. finding duplicates in an array
-    for(let i = 0; i < nums.length; i++)
+    //Iterate through the array
+    for(let i=0; i<arr.length; i++)
     {
-        if(nums[i] == nums[i+1])
-            value = true
+        // Check if the current element is already in the Set
+        if(hashset.has(arr[i]))
+            return true; // If it's a duplicate, return true
+
+        // If it's not a duplicate, add it to the Set
+        hashset.add(arr[i]);
+        console.log(hashset);
     }
-    return value;
+    return false;  // If the loop completes without finding duplicates, return false
 };
 
 console.log(containsDuplicate([1,2,3,1]));//true
