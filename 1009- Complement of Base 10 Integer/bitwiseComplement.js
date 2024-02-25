@@ -18,3 +18,7 @@ var bitwiseComplement = function(n) {
     let decimal = parseInt(complement, 2);
     return decimal;
 };
+
+console.log(bitwiseComplement(5));//2
+console.log(bitwiseComplement(7));//0
+console.log(bitwiseComplement(10));//5
