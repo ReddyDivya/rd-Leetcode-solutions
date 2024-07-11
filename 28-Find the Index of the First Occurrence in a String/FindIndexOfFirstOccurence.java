@@ -26,3 +26,8 @@ class Solution {
         System.out.println("Index of the first occurrence of \"" + needle3 + "\" in \"" + haystack3 + "\": " + result3);
     }
 }
+
+// Output:
+// Index of the first occurrence of "ll" in "hello": 2
+// Index of the first occurrence of "bba" in "aaaaa": -1
+// Index of the first occurrence of "" in "": 0
