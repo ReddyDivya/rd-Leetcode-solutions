@@ -4,6 +4,12 @@ class SingleNumber {
         
         // XOR all elements in the array
         for (int num : nums) {
+            /*
+                nums = [2,2,1]
+                2= 0^2
+                0= 2^2
+                1= 0^1
+            */
             result ^= num;
         }
         
