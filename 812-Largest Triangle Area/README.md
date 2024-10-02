@@ -4,7 +4,7 @@ Given an array of points on the X-Y plane points where points[i] = [xi, yi], ret
 
 ### Example 1:
 
-https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/04/1027.png
+![image](https://github.com/user-attachments/assets/0bdfb70f-475b-482a-95ad-36c0158e4bbe)
 
 ```
 Input: points = [[0,0],[0,1],[1,0],[0,2],[2,0]]
