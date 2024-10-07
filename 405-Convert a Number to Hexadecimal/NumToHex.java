@@ -1,4 +1,4 @@
-class ToHex {
+class NumToHex {
     public String toHex(int num) {
         // If the number is 0, just return "0"
         if (num == 0) {
@@ -21,7 +21,7 @@ class ToHex {
     }
 
     public static void main(String[] args) {
-        ToHex solution = new ToHex();
+        NumToHex solution = new NumToHex();
         
         // Test cases
         System.out.println(solution.toHex(26));   // Output: "1a"
